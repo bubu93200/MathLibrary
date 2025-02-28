@@ -35,11 +35,22 @@ Le projet MainMathLibrary est une application console qui utilise la librairie M
 	- MathLibrary.lib
 
 ## Configuration du projet MainMathLibrary dans Visual Studio 2022 supplémentaire
+***Je n'ai pas fait cette étape et ça fonctionne quand même.***
+
 Microsoft indique qu'il faut ajouter une commande xcopy pour copier le fichier MathLibrary.dll dans le répertoire de sortie de l'application console :
 :
 - Dans le volet gauche, sélectionnez Événements>de génération de propriétés>de configuration après l’événement de build.
 - Dans le volet de propriétés, sélectionnez le contrôle d’édition dans le champ Ligne de commande. Si vous avez suivi les instructions pour placer votre projet client dans une solution distincte du projet DLL, entrez cette commande :
 - xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"
 
+
+
+# Débogage
 ***Je n'ai pas fait cette étape et ça fonctionne quand même.***
+
+Pour déboguer le projet MainMathLibrary, il faut ajouter la directive /ASSEMBLYDEBUG.
+- Propriétés du projet MainMathLibrary -> propriétés de configuration -> Editeur de Lien -> Débogage : 
+    - Assembly pouvant être débogué -> OUI /ASSEMBLYDEBUG
+
+
 
