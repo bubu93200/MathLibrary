@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLibrary", "MathLibrary\MathLibrary.vcxproj", "{7FF15FC9-53A8-49C2-AE03-F9DDFC68664E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainMathLibrary", "MainMathLibrary\MainMathLibrary.vcxproj", "{E22F873A-30B2-49D7-9B46-4681B08A8E16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7FF15FC9-53A8-49C2-AE03-F9DDFC68664E} = {7FF15FC9-53A8-49C2-AE03-F9DDFC68664E}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{470A7E90-4449-4F6C-9148-A584B0FADF9F}"
 	ProjectSection(SolutionItems) = preProject
