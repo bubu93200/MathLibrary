@@ -42,3 +42,4 @@ Microsoft indique qu'il faut ajouter une commande xcopy pour copier le fichier M
 - xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"
 
 ***Je n'ai pas fait cette étape et ça fonctionne quand même.***
+
